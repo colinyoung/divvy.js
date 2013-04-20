@@ -1,6 +1,6 @@
 {
   "name": "divvy",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Divvies up an object's values into individual tuples",
   "main":"./lib/divvy",
   "scripts": {
