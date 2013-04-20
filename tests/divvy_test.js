@@ -1,4 +1,4 @@
-var divvy = require('../divvy'),
+var divvy = require('../lib/divvy'),
     test = require('test');
 
 exports['test divvy'] = function(assert) {
