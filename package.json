@@ -1,0 +1,12 @@
+{
+  "name" : "divvy",
+  "version" : "0.0.1",
+  "description" : "Divvies up an object's values into individual tuples",
+  "scripts": { "test": "node tests/divvy_test.js" },
+  "dependencies": {
+    "inflection" : "1.2.5"
+  },
+  "devDependencies": {
+    "test": ">=0.0.5"
+  }
+}
