@@ -13,4 +13,10 @@ exports['test divvy'] = function(assert) {
   assert.deepEqual(divvy(object), expectedResult, 'expectedResult equaled what divvy made');
 };
 
+exports['test singular objects'] = function(assert) {
+  var object = { cities: [ 'Chicago', 'New York' ] };
+  var expectedResult = [ { city: 'Chicago' }, { city: 'New York' } ];
+  assert.deepEqual(divvy(object), expectedResult, 'expectedResult equals even for single objects');
+}
+
 if (module == require.main) test.run(exports);
