@@ -22,3 +22,4 @@ console.log(citizens); // Results in:
       { country: 'Russia', person: 'Ilyna' },
       { country: 'Japan', person: 'Sho' } ]
 */
+```
