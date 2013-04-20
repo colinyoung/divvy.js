@@ -17,6 +17,22 @@ exports['test singular objects'] = function(assert) {
   var object = { cities: [ 'Chicago', 'New York' ] };
   var expectedResult = [ { city: 'Chicago' }, { city: 'New York' } ];
   assert.deepEqual(divvy(object), expectedResult, 'expectedResult equals even for single objects');
-}
+};
+
+exports['test cross-product'] = function(assert) {
+  var object = {
+    cities: ['Springfield', 'Madison', 'Belmont'],
+    states: ['IL', 'WI']
+  };
+  var expectedResult = [
+    { city: 'Springfield', state: 'IL' },
+    { city: 'Springfield', state: 'WI' },
+    { city: 'Madison', state: 'IL' },
+    { city: 'Madison', state: 'WI' },
+    { city: 'Belmont', state: 'IL' },
+    { city: 'Belmont', state: 'WI' }
+  ];
+  assert.deepEqual(divvy(object, {multiply:true}), expectedResult, 'cross products work fine');
+};
 
 if (module == require.main) test.run(exports);
