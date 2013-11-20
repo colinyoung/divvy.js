@@ -1,6 +1,6 @@
 {
   "name": "divvy",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Divvies up an object's values into individual tuples",
   "main":"./lib/divvy",
   "scripts": {
@@ -10,7 +10,7 @@
     "inflection": "1.2.5"
   },
   "devDependencies": {
-    "test": ">=0.0.5"
+    "test": ">=0.0.6"
   },
   "readme": "# Divvy\n\n## A tiny `npm` package to split objects up conveniently.\n\nSometimes you want to take an object with keys, like this:\n\n```javascript\nvar object = {\n  countries: ['United States', 'Aruba', 'Russia', 'Japan'],\n  people: ['Chad', 'Joe', 'Ilyna', 'Sho']\n};\n```\n\n...and split it up into separate 'items', if you will:\n\n```javascript\nvar citizens = divvy(object);\nconsole.log(citizens); // Results in:\n/*  \n    [ { country: 'United States', person: 'Chad' },\n      { country: 'Aruba', person: 'Joe' },\n      { country: 'Russia', person: 'Ilyna' },\n      { country: 'Japan', person: 'Sho' } ]\n*/\n```",
   "readmeFilename": "Readme.md",
